@@ -1,7 +1,7 @@
 console.log("the bot is starting");
 const fetch = require("node-fetch");
 var firebase = require("firebase");
-// require("firebase/app");
+// require("firebase/app")
 // require("firebase/database");
 
 qrin = [];
