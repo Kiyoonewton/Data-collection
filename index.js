@@ -1,14 +1,12 @@
 console.log("the bot is starting");
 const fetch = require("node-fetch");
 var firebase = require("firebase");
-// require("firebase/app")
-// require("firebase/database");
 
-qrin = [];
-qrim = [];
-rin = [];
-rim = [];
-data = [];
+this.qrin = [];
+this.qrim = [];
+this.rin = [];
+this.rim = [];
+this.data = [];
 function setup(hello) {
   const fetchWithRetry = async (url, opt, tries = 20) => {
     const errs = [];
@@ -43,7 +41,7 @@ function setup(hello) {
         .then((response) => response.json())
         .then((data) => {
           rim.push({ rit, data });
-          // console.log(rit + " Done");
+          console.log(rit + "done");
         })
         .catch((err) => console.error(err));
     };
@@ -60,7 +58,6 @@ function setup(hello) {
       qrin.push(love(rin));
       qrim.push(love(rim));
       quick();
-      // setTimeout(quick(), 3000);
     }
   }, 3000);
   var love = (input) => {
@@ -172,10 +169,11 @@ function setup(hello) {
     // }
   };
 }
-var botMatches = 67916;
-setup(botMatches);
+var botMatches = 67951;
 setInterval(() => {
-  setup(botMatches++);
+  var currentTime = new Date();
+  var du = Math.floor((currentTime / 8250000) % 24);
+  setup(botMatches + du);
   qrin = [];
   qrim = [];
   rim = [];
