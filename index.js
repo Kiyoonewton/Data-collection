@@ -41,7 +41,7 @@ function setup(hello) {
         .then((response) => response.json())
         .then((data) => {
           rim.push({ rit, data });
-          console.log(rit + "done");
+          // console.log(rit + "done");
         })
         .catch((err) => console.error(err));
     };
@@ -169,11 +169,13 @@ function setup(hello) {
     // }
   };
 }
-var botMatches = 67951;
-setInterval(() => {
-  var currentTime = new Date();
-  var du = Math.floor((currentTime / 8250000) % 24);
-  setup(botMatches + du);
+var botMatches = 67964;
+setTimeout(() => {
+  const newYears = "1 Jan 2022";
+  var future = new Date(newYears);
+  var currentTime = future - new Date();
+  var dii = 2143 - Math.floor(currentTime / 8250000);
+  setup(botMatches + dii);
   qrin = [];
   qrim = [];
   rim = [];
