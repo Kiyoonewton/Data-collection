@@ -72,6 +72,7 @@ function setup(hello) {
       //   true;
       food = () => {
         g = qrim[0][0].data.doc[0].data[0].events[0].details.vflSeasonId;
+        console.log(g);
         this.dat = [];
         var good = (x) => {
           var v = qrin[0][x].data.doc[0].data[0].markets;
@@ -170,7 +171,7 @@ function setup(hello) {
   };
 }
 var botMatches = 67963;
-setTimeout(() => {
+setInterval(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
   var currentTime = future - new Date();
