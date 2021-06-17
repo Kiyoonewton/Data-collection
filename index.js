@@ -171,7 +171,7 @@ function setup(hello) {
   };
 }
 var botMatches = 67963;
-setInterval(() => {
+setTimeout(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
   var currentTime = future - new Date();
@@ -182,4 +182,4 @@ setInterval(() => {
   rim = [];
   rin = [];
   data = [];
-}, 8250000);
+});
