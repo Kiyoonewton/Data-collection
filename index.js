@@ -170,12 +170,13 @@ function setup(hello) {
     // }
   };
 }
-var botMatches = 67963;
+var botMatches = 67962;
 setInterval(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
   var currentTime = future - new Date();
-  var dii = 2143 - Math.floor(currentTime / 8250000);
+  var dii = 2143 - Math.ceil(currentTime / 8250000);
+  console.log(dii + botMatches);
   setup(botMatches + dii);
   qrin = [];
   qrim = [];
