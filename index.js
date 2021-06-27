@@ -170,12 +170,12 @@ function setup(hello) {
     // }
   };
 }
-var botMatches = 67962;
+var botMatches = 67960;
 setInterval(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
   var currentTime = future - new Date();
-  var dii = 2143 - Math.ceil(currentTime / 8250000);
+  var dii = 2194 - Math.ceil(currentTime / 8460000);
   console.log(dii + botMatches);
   setup(botMatches + dii);
   qrin = [];
@@ -183,4 +183,4 @@ setInterval(() => {
   rim = [];
   rin = [];
   data = [];
-}, 8250000);
+}, 8460000);
