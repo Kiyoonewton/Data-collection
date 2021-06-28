@@ -175,7 +175,7 @@ setInterval(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
   var currentTime = future - new Date();
-  var dii = 2194 - Math.ceil(currentTime / 8460000);
+  var dii = 2194 - Math.floor(currentTime / 8460000);
   console.log(dii + botMatches);
   setup(botMatches + dii);
   qrin = [];
