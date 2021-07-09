@@ -136,7 +136,7 @@ function setup(hello) {
           console.log({ ["MatchDay " + h]: array });
         };
         for (let k = 0; k < 30; k++) {
-          setTimeout(good, k * 10, k);
+          setTimeout(good, (k + 1) * 100, k);
         }
 
         setTimeout(() => {
@@ -174,7 +174,7 @@ function setup(hello) {
   };
 }
 var botMatches = 67959;
-setInterval(() => {
+setTimeout(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
   var currentTime = future - new Date();
@@ -186,4 +186,4 @@ setInterval(() => {
   rim = [];
   rin = [];
   data = [];
-}, 60000);
+});
