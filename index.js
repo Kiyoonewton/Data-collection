@@ -173,7 +173,7 @@ function setup(hello) {
     // }
   };
 }
-var botMatches = 67959;
+var botMatches = 67958;
 setInterval(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
@@ -186,4 +186,4 @@ setInterval(() => {
   rim = [];
   rin = [];
   data = [];
-}, 10000);
+}, 30000);
