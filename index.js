@@ -41,7 +41,7 @@ function setup(hello) {
         .then((response) => response.json())
         .then((data) => {
           rim.push({ rit, data });
-          // console.log(rit + "done");
+          // console.log(rit + data);
         })
         .catch((err) => console.error(err));
     };
@@ -130,8 +130,10 @@ function setup(hello) {
           }
           for (let k = 0; k < 8; k++) {
             array.push(Mr(k));
+            // console.log(Mr(k));
           }
           dat.push({ ["MatchDay " + h]: array });
+          console.log({ ["MatchDay " + h]: array });
         };
         for (let k = 0; k < 30; k++) {
           setTimeout(good, k * 10, k);
@@ -171,7 +173,7 @@ function setup(hello) {
     // }
   };
 }
-var botMatches = 67960;
+var botMatches = 67958;
 setInterval(() => {
   const newYears = "1 Jan 2022";
   var future = new Date(newYears);
